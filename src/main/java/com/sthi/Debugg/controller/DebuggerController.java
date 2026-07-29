@@ -33,7 +33,4 @@ public class DebuggerController {
     }
 
 
-   private int value(){
-        return 100;
-   }
 }
