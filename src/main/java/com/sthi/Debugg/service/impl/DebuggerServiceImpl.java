@@ -31,4 +31,11 @@ public class DebuggerServiceImpl implements DebuggerService {
 
         return repository.save(existing);
     }
+
+
+    @Override
+    public List<Debugger> getAllDebuggers() {
+        return repository.findAll();
+    }
+
 }

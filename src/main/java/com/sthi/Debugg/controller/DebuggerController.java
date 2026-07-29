@@ -27,6 +27,10 @@ public class DebuggerController {
                                    @RequestBody Debugger debugger) {
         return service.updateDebugger(id, debugger);
     }
+    @GetMapping
+    public List<Debugger> getAllDebuggers() {
+        return service.getAllDebuggers();
+    }
 
 
 }

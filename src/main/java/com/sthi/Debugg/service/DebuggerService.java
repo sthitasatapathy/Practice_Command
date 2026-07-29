@@ -12,4 +12,6 @@ public interface DebuggerService {
 
 
     Debugger updateDebugger(Long id, Debugger debugger);
+
+    List<Debugger> getAllDebuggers();
 }
