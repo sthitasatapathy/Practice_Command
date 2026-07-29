@@ -35,4 +35,7 @@ public class DebuggerController {
         return "welcomw all";
   }
 
+   private int value(){
+        return 100;
+   }
 }
