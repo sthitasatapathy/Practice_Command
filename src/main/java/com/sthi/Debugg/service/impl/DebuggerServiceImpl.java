@@ -20,5 +20,15 @@ public class DebuggerServiceImpl implements DebuggerService {
         return repository.save(debugger);
     }
 
+    @Override
+    public Debugger updateDebugger(Long id, Debugger debugger) {
 
+        Debugger existing = repository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Debugger not found"));
+
+        existing.setName(debugger.getName());
+        existing.setEmail(debugger.getEmail());
+
+        return repository.save(existing);
+    }
 }

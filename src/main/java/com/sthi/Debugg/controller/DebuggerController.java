@@ -22,4 +22,11 @@ public class DebuggerController {
     }
 
 
+    @PutMapping("/{id}")
+    public Debugger updateDebugger(@PathVariable Long id,
+                                   @RequestBody Debugger debugger) {
+        return service.updateDebugger(id, debugger);
+    }
+
+
 }

@@ -11,4 +11,5 @@ public interface DebuggerService {
     Debugger addDebugger(Debugger debugger);
 
 
+    Debugger updateDebugger(Long id, Debugger debugger);
 }
