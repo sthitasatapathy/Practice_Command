@@ -31,9 +31,7 @@ public class DebuggerController {
     public List<Debugger> getAllDebuggers() {
         return service.getAllDebuggers();
     }
-  private String print(){
-        return "welcomw all";
-  }
+
 
    private int value(){
         return 100;
